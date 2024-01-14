@@ -20,12 +20,13 @@ export class AddToSlackBtnComponent {
     'mpim:write',
     'channels:join',
   ];
+  readonly CLIENT_ID = '4302912159520.6331710262610';
 
   get scopes() {
     return this.SCOPES.toString();
   }
 
   get installURI() {
-    return `${this.INSTALL_PATH}?scope=${this.scopes}&redirect_uri=${this.REDIRECT_URI}&client_id=4302912159520.6331710262610`;
+    return `${this.INSTALL_PATH}?scope=${this.scopes}&redirect_uri=${this.REDIRECT_URI}&client_id=${this.CLIENT_ID}`;
   }
 }
