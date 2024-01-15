@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AddToSlackBtnComponent {
   readonly INSTALL_PATH = 'https://slack.com/oauth/v2/authorize';
-  readonly REDIRECT_URI = 'https://brainas.net/integrations/slack/install';
+
   readonly SCOPES = [
     'chat:write',
     'channels:read',
@@ -20,6 +20,9 @@ export class AddToSlackBtnComponent {
     'mpim:write',
     'channels:join',
   ];
+
+  readonly REDIRECT_URI = 'https://brainas.net/integrations/slack/install';
+
   readonly CLIENT_ID = '4302912159520.6331710262610';
 
   get scopes() {
